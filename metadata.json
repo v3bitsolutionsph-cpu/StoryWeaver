@@ -1,0 +1,7 @@
+{
+  "name": "AI Storyteller for Kids",
+  "description": "An interactive AI storyteller that creates and narrates stories for children based on their voice prompts, accompanied by simple animations.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
