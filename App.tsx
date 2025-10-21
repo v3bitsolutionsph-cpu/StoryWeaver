@@ -96,7 +96,7 @@ const ConversationLog: React.FC<{ conversation: Turn[] }> = ({ conversation }) =
 const App: React.FC = () => {
     const { status, conversation, error, startSession, stopSession } = useStoryteller();
 
-    const statusText: {[key in StorytellerStatus]: string} = {
+    const statusText: Record<StorytellerStatus, string> = {
         [StorytellerStatus.IDLE]: "Let's create a story! Press the button and tell me what it's about.",
         [StorytellerStatus.LISTENING]: "I'm listening... tell me your idea!",
         [StorytellerStatus.THINKING]: "A great idea! Let me think...",
